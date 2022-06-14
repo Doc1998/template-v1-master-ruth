@@ -26,10 +26,13 @@
 
       p {
         margin-bottom: 1.5em;
+        span {
+          color: blue;
+        }
       }
 
       ul {
-        padding-left: 1.5em;
+        padding-left: 0.5em;
         margin-bottom: 1.5em;
 
         li {
@@ -41,6 +44,10 @@
           img {
             margin-right: 1.5em;
             margin-top: 1.5em;
+          }
+          span {
+            margin-top: 1.5em;
+            font-size: 0.7rem;
           }
         }
       }
@@ -57,14 +64,14 @@
       width: 38.175em;
       height: 53.8em;
       font-size: ~"min(1.4vw, 1em)"; // scales the image-box down
-
+      margin-bottom: 1.5rem;
       &:before {
         content: "";
         position: absolute;
         display: block;
         height: 100%;
         width: 100%;
-        background: #ffba19;
+        background: blue;
         opacity: 1;
         top: 1em;
         left: -2em;
