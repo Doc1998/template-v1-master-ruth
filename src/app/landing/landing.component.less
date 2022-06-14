@@ -73,7 +73,8 @@
 @media only screen and (min-width: 1024px) {
   .hero-content {
     width: 50%;
-    margin-left: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     padding-top: 1rem;
     .heroText {
@@ -81,5 +82,18 @@
         font-size: 2rem !important;
       }
     }
+  }
+  h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 0.125em;
+    width: 1.515625em;
+    background: var(--primary);
+    opacity: 1;
+    margin-top: 10px;
+    left: 30%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
