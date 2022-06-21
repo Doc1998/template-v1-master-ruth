@@ -30,7 +30,7 @@
   <div class="navigation">
     <ul class="navList" *ngIf="!phoneView">
       <li>
-        <span
+        <span [ngClass]="colorHeader? 'color':'noColor'"
           ><a href="/home" [ngClass]="colorHeader? 'color':'noColor'"
             >Home</a
           ></span
