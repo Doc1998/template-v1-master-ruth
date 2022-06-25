@@ -63,6 +63,36 @@
       width: 96%;
     }
   }
+
+  .portContainer{
+    margin-top: 3em;
+    .title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      h1::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0.125em;
+        width: 1.515625em;
+        background: var(--primary);
+        opacity: 1;
+        margin-top: 10px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+    .pictures{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2em;
+    }
+  }
 }
 
 /* Tablet */
@@ -85,5 +115,23 @@
     padding-block-end: 6.25em;
     background-attachment: fixed;
     font-size: inherit;
+  }
+  h1{
+    font-size: 2.5em;
+  }
+  .pictures{
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .image-box{
+      flex-basis: 33%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+    }
   }
 }

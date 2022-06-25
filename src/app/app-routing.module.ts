@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: "", component: LandingComponent },
   { path: "about-us", component: AboutUsComponent },
   { path: "reviews", component: ReviewsComponent },
-  { path: "projects", component: ProjectsComponent },
+  { path: "portfolio", component: ProjectsComponent },
   { path: "contact", component: ContactComponent }
 ];
 
