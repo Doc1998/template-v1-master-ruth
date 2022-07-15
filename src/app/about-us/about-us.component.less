@@ -173,6 +173,10 @@
       display: flex;
       flex-direction: row;
     }
+    .expandedDescriptions{
+      margin-left: 40%;
+      width: 60%;
+    }
     .transitionArrow{
       width: 100%;
       margin-left: 0;
@@ -202,14 +206,15 @@
       width: 40%;
       margin: 0px 0px 0px 20px ;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
       
     }
     .pricingText{
       width: 90%;
     }
-    .container{
+    .containerText{
+      margin-top: 6em;
       width: 60%;
     }
     .list-group{
@@ -282,5 +287,32 @@
       width: 100%;
       object-fit: cover;
     }
+  }
+  .image-box-second {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 19.175em;
+    height: 26.8em;
+    font-size: ~"min(1.4vw, 1em)"; // scales the image-box down
+    margin-top: 6em;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  }
+  @media only screen and (max-width: 667px) {
+  .image-box-second,.image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 6em;
   }
   }

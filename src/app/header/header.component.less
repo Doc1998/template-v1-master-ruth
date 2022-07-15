@@ -11,8 +11,7 @@
     background-color: white;
   }
   .color {
-    background-color: lightblue;
-    color: #000;
+    background-color: white;
   }
   .navList {
     display: flex;
@@ -34,7 +33,7 @@
     font-weight: 600;
     font-size: 1.2rem;
   }
-.navList {
+  .navList {
     li {
       span:hover {
         border-bottom: 5px solid #ffba19;
@@ -199,7 +198,7 @@
     }
   }
   .navListMenu {
-    height: 13em;
+    height: 15em;
     width: 100%;
     position: fixed;
     z-index: 10;
@@ -213,29 +212,36 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      width: 85%;
-      height: 80%;
-      margin-top: 2.5em;
+      width: 100%;
+      height: 6em;
+      margin-top: 4em;
       a {
         height: 100%;
         color: black !important;
-        margin: 0;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        font-size: 1em;
       }
       li {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         width: 100%;
-        border-bottom: 2px solid black;
-        padding-bottom: 5px;
-      }
     }
+    li:nth-child(2),
+    li:nth-child(4),
+    li:nth-child(6) {
+      background-color: rgb(252, 238, 238);
+    }
+  }
   }
 }
 @media only screen and (min-width: 374px) {
   .navList {
     font-size: 0.5rem;
   }
+  
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -251,10 +257,13 @@
   }
   .color {
     color: #000 ;
-    span:hover {
-      border-bottom: 5px solid black ;
-      padding-bottom: 5px;
-      
+  .navList {
+    li {
+      span:hover {
+        border-bottom: 5px solid #ffba19;
+        padding-bottom: 5px;
+      }
     }
+  }
   }
 }
