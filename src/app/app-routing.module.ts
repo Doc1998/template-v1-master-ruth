@@ -7,12 +7,12 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { ReviewsComponent } from "./reviews/reviews.component";
 
 const routes: Routes = [
-  { path: "home", component: LandingComponent },
-  { path: "", component: LandingComponent },
-  { path: "about-us", component: AboutUsComponent },
-  { path: "reviews", component: ReviewsComponent },
-  { path: "portfolio", component: ProjectsComponent },
-  { path: "contact", component: ContactComponent }
+  { path: "home", component: LandingComponent , data: {title : 'Fine Art & Fashion Illustrations | RuthTeresaArt'}},
+  { path: "", component: LandingComponent , data: {title : 'Fine Art & Fashion Illustrations | RuthTeresaArt'}},
+  { path: "about-us", component: AboutUsComponent , data: {title : 'About Us | Fine Art & Fashion Illustrations | RuthTeresaArt'}},
+  { path: "reviews", component: ReviewsComponent , data: {title : 'Reviews | Fine Art & Fashion Illustrations | RuthTeresaArt'} },
+  { path: "portfolio", component: ProjectsComponent , data: {title : 'Portfoilio | Fine Art & Fashion Illustrations | RuthTeresaArt'} },
+  { path: "contact", component: ContactComponent  , data: {title : 'Contact | Fine Art & Fashion Illustrations | RuthTeresaArt'}}
 ];
 
 @NgModule({

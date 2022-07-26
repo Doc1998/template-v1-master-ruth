@@ -20,14 +20,15 @@
 <!--                    FORM                      -->
 <!-- ============================================ -->
 
-<section id="form" class="formsection">
+<section id="form">
   <div class="left-section">
     <h2 class="title">Send a Message</h2>
     <p>
       If you have any questions or concerns please feel free to reach out to us.
       We respond to every call and email.
     </p>
-    <form id="contact" name="Contact Form2" method="post" data-netlify="true">
+    <form id="contact" action="https://mailthis.to/ruthteresa96@gmail.com"
+    method="POST" encType="multipart/form-data" >
       <div class="input-group">
         <label for="name">Full Name</label>
         <input
@@ -111,12 +112,16 @@
         ></textarea>
         <div aria-hidden="true" class="hover-box"></div>
       </div>
+      <input type="hidden" name="_subject" value="Contact form submitted">
+      <input type="hidden" name="_honeypot" value="">
+      <input type="hidden" name="_confirmation" value="">
       <p class="form-submit">
         <button
           name="submit"
           type="submit"
           id="contact-submit"
           class="button-6"
+          value="Send"
           data-submit="...Sending"
         >
           Submit
@@ -127,15 +132,15 @@
   <div class="contact-right">
     <div class="info-group">
       <span class="heading">Location</span>
-      <span class="info">Charleville, Cork</span>
+      <span class="info">Cork, Ireland</span>
     </div>
     <div class="info-group">
       <span class="heading">Phone</span>
-      <a class="info" href="tel:0838689176">0838689176</a>
+      <a class="info" href="tel:0868250285">0868250285</a>
     </div>
     <div class="info-group">
       <span class="heading">Email</span>
-      <a class="info" href="mailto:email@email.com">Click to Email</a>
+      <a class="info" href="mailto:ruthteresa96@gmail.com">Click to Email</a>
     </div>
     <div class="info-group">
       <span class="heading">Hours</span>
